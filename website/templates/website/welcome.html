@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}BDAIflix{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="flex flex-column align-center center container">
+    <video controls autoplay loop id="myVideo">
+      {% load static %}<source src="{% static 'website/img/svu.mp4' %}" type="video/mp4">
+    </video>
+    <p>Law and Order: Special Victims Unit</p>
+    <div class="text-secondary"><a href="{% url 'serie-part' client.id 2 %}">New episodes</a></div>
+  </div>
+</section>
+
+<!-- MAIN CONTAINER -->
+<div class="container">
+
+  <!-- SALE BANNER -->
+  <section>
+    <div class="text-dark flex align-center center">
+      COURSES
+    </div>
+  </section>
+  <section>
+    <div class="flex align-center center banner">
+      <a href ="{% url 'course-part' client.id 1 %}">{% load static %}<img class="img-right category" src="{% static 'website/img/django.png' %}"></a>
+      <div class="banner-text category">
+        <div class="text-light">Web Development</div>
+        <div class="text-secondary"><a href="{% url 'courses' client.id %}">Access our best courses</a></div>
+      </div>
+      <a href ="{% url 'course-part' client.id 3 %}">{% load static %}<img class="img-left category" src="{% static 'website/img/react.png' %}"></a>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section>
+    <div class="text-dark flex align-center center">
+      MOVIES
+    </div>
+  </section>
+  <section>
+    {% for movie in movies %}
+      <div class="category flex align-center center">
+          <a href="{% url 'movie-part' client.id movie.id %}">
+            {% load static %}<img class="imagesrc{{movie.id}}">
+            <script>
+              var url = "static/website/images-classes{{movie.image.url}}"
+              function update(className, property, value) {
+                Array.from(document.getElementsByClassName(className)).forEach(elem => (elem[property] = value))
+              }
+
+              update("imagesrc{{movie.id}}", "src", url)
+            </script>
+            <div class="category-text">
+              <h3> {{ movie.title }} </h3>
+              <div> {{ movie.genres }} </div>
+            </div>
+          </a>
+      </div>
+    {% endfor %}
+  </section>
+
+  <section>
+    <div class="text-dark flex align-center center">
+      TV Shows
+    </div>
+  </section>
+  <section>
+    {% for serie in series %}
+      <div class="category flex align-center center">
+          <a href="{% url 'serie-part' client.id serie.id %}">
+            {% load static %}<img class="image{{serie.id}}">
+            <script>
+              var url = "static/website/images-classes{{serie.image.url}}"
+              function update(className, property, value) {
+                Array.from(document.getElementsByClassName(className)).forEach(elem => (elem[property] = value))
+              }
+
+              update("image{{serie.id}}", "src", url)
+            </script>
+            <div class="category-text">
+              <h3> {{ serie.title }} </h3>
+              <div> {{ serie.genres }} </div>
+            </div>
+          </a>
+      </div>
+    {% endfor %}
+  </section>
+
+</div>
+
+
+{% endblock %}

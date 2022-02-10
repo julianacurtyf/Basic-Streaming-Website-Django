@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}BDAIflix - Movies{% endblock %}
+
+{% block content %}
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+
+    <!-- CATEGORIES -->
+    <section>
+      <div class="text-dark flex align-center center">
+        MOVIES
+      </div>
+    </section>
+    <section>
+      {% for movie in movies %}
+        <div class="category flex align-center center">
+            <a href="{% url 'movie-part' client.id movie.id %}">
+              {% load static %}<img class="movie{{movie.id}}">
+              <script>
+                var url = "static/website/images-classes{{movie.image.url}}"
+                function update(className, property, value) {
+                  Array.from(document.getElementsByClassName(className)).forEach(elem => (elem[property] = value))
+                }
+                update("movie{{movie.id}}", "src", url)
+              </script>
+              <div class="category-text">
+                <h3> {{ movie.title }} </h3>
+                <div> {{ movie.genres }} </div>
+              </div>
+            </a>
+        </div>
+      {% endfor %}
+    </section>
+
+
+  </div>
+
+
+{% endblock %}

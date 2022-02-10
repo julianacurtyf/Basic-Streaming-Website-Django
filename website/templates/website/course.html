@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}BDAIflix - {{ course.title }}{% endblock %}
+
+{% block content %}
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+
+    <!-- CATEGORIES -->
+    <section>
+      <div class="text-dark flex align-center center">
+        {{ course.title }}
+      </div>
+    </section>
+    <section>
+      <div class="flex-one align-center center">
+        <a href="{% url 'course-part' client.id course.id %}">
+          <div class="align-center center">{% load static %}<img class="course{{course.id}}"></div>
+          <script>
+            var url = "static/website/images-classes{{course.image.url}}"
+            function update(className, property, value) {
+              Array.from(document.getElementsByClassName(className)).forEach(elem => (elem[property] = value))
+            }
+            update("course{{course.id}}", "src", url)
+          </script>
+          <div class="category-text">
+            <h3> {{ course.area }} </h3>
+            <div> By {{ course.expert }} </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    {% for class in classes %}
+      {% if course.id == class.course_id%}
+        <section>
+            <div class="course align-center center">
+                <h3> Class: {{ class.title }} </h3>
+                <div> <b>Transcript:</b> {{ class.transcript }} ...</div>
+            </div>
+        </section>
+      {% endif %}
+    {% endfor %} 
+
+  </div>
+
+
+{% endblock %}
