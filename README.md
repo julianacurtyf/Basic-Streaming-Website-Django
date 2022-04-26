@@ -50,15 +50,19 @@ All the TV Shows:
 <img width="452" alt="tvshows" src="https://user-images.githubusercontent.com/93845875/165350448-93709091-12e9-4ad9-ba41-0fe58485abf1.png">
 
 All the Courses:
+
 <img width="452" alt="courses" src="https://user-images.githubusercontent.com/93845875/165350497-48164330-96ea-40ce-ad37-39281c3b8510.png">
 
 A particular movie:
+
 <img width="452" alt="movie" src="https://user-images.githubusercontent.com/93845875/165350554-4dff3ce2-7022-4fe1-82a0-337602be6108.png">
 
 A particular TV Show:
+
 <img width="452" alt="tvshow" src="https://user-images.githubusercontent.com/93845875/165350631-9904021d-fff7-49cb-8fe0-c790048a8a9c.png">
 
 A particular course:
+
 <img width="452" alt="course" src="https://user-images.githubusercontent.com/93845875/165350695-2aa30a1b-f4dd-48d7-992e-c00241accc14.png">
 
 
