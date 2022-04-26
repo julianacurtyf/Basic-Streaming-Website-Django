@@ -43,8 +43,7 @@ After selecting one of the users, you will get to a home page. The authenticatio
 
 Then, it is possible to interact with the website, either going to the movies page, or to a particula tv show or course. Some of the possibilities can be visualized on the images below.
 
-<img width="452" alt="movies" src="https://user-images.githubusercontent.com/93845875/165350388-6dff29fb-c646-48f3-8d7a-4888a85b0eb9.png">
-<img width="452" alt="tvshows" src="https://user-images.githubusercontent.com/93845875/165350448-93709091-12e9-4ad9-ba41-0fe58485abf1.png">
+<img width="452" alt="movies" src="https://user-images.githubusercontent.com/93845875/165350388-6dff29fb-c646-48f3-8d7a-4888a85b0eb9.png"><img width="452" alt="tvshows" src="https://user-images.githubusercontent.com/93845875/165350448-93709091-12e9-4ad9-ba41-0fe58485abf1.png">
 <img width="452" alt="courses" src="https://user-images.githubusercontent.com/93845875/165350497-48164330-96ea-40ce-ad37-39281c3b8510.png">
 
 <img width="452" alt="movie" src="https://user-images.githubusercontent.com/93845875/165350554-4dff3ce2-7022-4fe1-82a0-337602be6108.png">
