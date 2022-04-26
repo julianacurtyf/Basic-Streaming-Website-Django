@@ -33,8 +33,13 @@ And navigate to `http://127.0.0.1:8000/`.
 
 ## Walkthrough
 
-Once you run the server, you will get to a home page:
+Once you run the server, you will get to a login page:
 
+<img width="452" alt="login" src="https://user-images.githubusercontent.com/93845875/165349416-7f648d3a-b1d9-4ddf-bcda-0be215b8b429.png">
+
+After selecting one of the users, you will get to a home page. The authentication of the users was not the goal of the project, so in this case, is non existent.
+
+<img width="297" alt="home" src="https://user-images.githubusercontent.com/93845875/165349651-42db1f26-1989-490b-b975-8a044474b091.png">
 
 
 
