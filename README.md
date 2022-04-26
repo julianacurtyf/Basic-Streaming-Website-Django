@@ -39,17 +39,17 @@ Once you run the server, you will get to a login page:
 
 After selecting one of the users, you will get to a home page. The authentication of the users was not the goal of the project, so in this case, is non existent.
 
-<img width="297" alt="home" src="https://user-images.githubusercontent.com/93845875/165349651-42db1f26-1989-490b-b975-8a044474b091.png">
+<img width="452" alt="home" src="https://user-images.githubusercontent.com/93845875/165349651-42db1f26-1989-490b-b975-8a044474b091.png">
 
 Then, it is possible to interact with the website, either going to the movies page, or to a particula tv show or course. Some of the possibilities can be visualized on the images below.
 
-<img width="344" alt="movies" src="https://user-images.githubusercontent.com/93845875/165350388-6dff29fb-c646-48f3-8d7a-4888a85b0eb9.png">
-<img width="348" alt="tvshows" src="https://user-images.githubusercontent.com/93845875/165350448-93709091-12e9-4ad9-ba41-0fe58485abf1.png">
+<img width="452" alt="movies" src="https://user-images.githubusercontent.com/93845875/165350388-6dff29fb-c646-48f3-8d7a-4888a85b0eb9.png">
+<img width="452" alt="tvshows" src="https://user-images.githubusercontent.com/93845875/165350448-93709091-12e9-4ad9-ba41-0fe58485abf1.png">
 <img width="452" alt="courses" src="https://user-images.githubusercontent.com/93845875/165350497-48164330-96ea-40ce-ad37-39281c3b8510.png">
 
 <img width="452" alt="movie" src="https://user-images.githubusercontent.com/93845875/165350554-4dff3ce2-7022-4fe1-82a0-337602be6108.png">
-<img width="414" alt="tvshow" src="https://user-images.githubusercontent.com/93845875/165350631-9904021d-fff7-49cb-8fe0-c790048a8a9c.png">
-<img width="395" alt="course" src="https://user-images.githubusercontent.com/93845875/165350695-2aa30a1b-f4dd-48d7-992e-c00241accc14.png">
+<img width="452" alt="tvshow" src="https://user-images.githubusercontent.com/93845875/165350631-9904021d-fff7-49cb-8fe0-c790048a8a9c.png">
+<img width="452" alt="course" src="https://user-images.githubusercontent.com/93845875/165350695-2aa30a1b-f4dd-48d7-992e-c00241accc14.png">
 
 
 ## Technologies
