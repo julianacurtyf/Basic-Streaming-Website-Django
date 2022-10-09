@@ -1,4 +1,4 @@
-# StreamingWebsiteDjango
+# BAsic Streaming Website Django
 
 ## Setup
 
